@@ -1,7 +1,7 @@
 public class InputChar {
     public static String inputOperation(){
         while (true) {
-            System.out.print("\nВведите символ операции (+, -, *, /, %): ");
+
             String operation = Main.scanner.nextLine().trim();
             if (operation.equals("+") ||
                     operation.equals("-") ||
