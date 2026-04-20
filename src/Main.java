@@ -7,7 +7,7 @@ public class Main {
         System.out.println("===КОНСОЛЬНЫЙ КАЛЬКУЛЯТОР===");
         System.out.println("Поддерживаемые системы: 2, 8, 10, 16");
         System.out.println("По умолчанию: десятичная система счисления");
-
+        scanner = new Scanner(System.in);
         while(true){
             try{
                 System.out.println();
@@ -38,8 +38,7 @@ public class Main {
             }
             catch(Exception e){
                 System.out.println("Ошибка: " + e.getMessage());
-                System.out.print("Нажмите Enter для продолжения");
-                scanner.nextLine();
+
             }
         }
     }
