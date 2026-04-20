@@ -27,7 +27,7 @@ public class BaseCalculator implements ICalculatorinterface{
         BigInteger num1 = new BigInteger(a, base);
         BigInteger num2 = new BigInteger(b, base);
         if (num2.equals(BigInteger.ZERO)) {
-            throw new ArithmeticException("Деленить на ноль нельзя");
+            throw new ArithmeticException("Делить на ноль нельзя");
         }
         return num1.divide(num2).toString(base).toUpperCase();
     }
